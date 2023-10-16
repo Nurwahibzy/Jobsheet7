@@ -12,7 +12,7 @@ public class DoWhileCuti21 {
         jatahCuti = sc.nextInt();
 
         do {
-            System.out.print("Apakah Anda ingin mengambil cuti (y/n)? ");
+            System.out.print("Apakah Anda ingin mengambil cuti (y/t)? ");
             konfirmasi = sc.next();
 
             if (konfirmasi.equalsIgnoreCase("y")) {
@@ -31,6 +31,8 @@ public class DoWhileCuti21 {
                     System.out.println("Sisa jatah cuti: " + jatahCuti);
                 } 
 
+            }else if (konfirmasi.equalsIgnoreCase("t")) {
+                break;
             }
 
         } while (jatahCuti > 0);
